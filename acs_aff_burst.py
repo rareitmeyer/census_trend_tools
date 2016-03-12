@@ -1,3 +1,7 @@
+# Code to organize and extract ACS data from American Fact Finder downloads.
+
+# Copyright 2016 R. A. Reitmeyer
+
 # Take a bunch of zip files named like the below...
 #     acs_non_places_2005_0-40.zip   acs_non_places_2014_41-46.zip
 #     acs_non_places_2005_41-60.zip  acs_non_places_2014_47-61.zip
@@ -47,7 +51,7 @@ if not os.path.exists("logs"):
 
 logging.basicConfig(
     filename=os.path.join("logs",__file__+time.strftime('.%Y%m%d_%H%M%S.log', time.localtime(NOW))),
-    format='%(asctime)|%(levelno)|%(levelname)|%(filename)|%(lineno)|%(message)',
+    format='(asctime)|(levelno)|(levelname)|(filename)|(lineno)|(message)',
     level=logging.DEBUG
     )
 

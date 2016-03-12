@@ -1,3 +1,8 @@
+# Tool for assembling ACS metadata from a directory tree of downloads, to
+# facilitate searching.
+#
+# Copyright 2016 R. A. Reitmeyer
+#
 # Suppose you have a lot of American Fact Finder data files,
 # named like "ACS_10_5YR_S1901_with_ann.csv" and "ACS_10_5YR_S1901_metadata.csv"
 # Because the column names (both long and short) change from year to year,
@@ -25,7 +30,7 @@ if not os.path.exists("logs"):
 
 logging.basicConfig(
     filename=os.path.join("logs",__file__+time.strftime('.%Y%m%d_%H%M%S.log', time.localtime(NOW))),
-    format='%(asctime)|%(levelno)|%(levelname)|%(filename)|%(lineno)|%(message)',
+    format='(asctime)|(levelno)|(levelname)|(filename)|(lineno)|(message)',
     level=logging.DEBUG
     )
 

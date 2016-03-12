@@ -1,8 +1,7 @@
 # Search through assembled metadata and search for
 # matching columns based on regex pattern(s).
-
-# Copyright R. A. Reitmeyer
-# Released under the GNU Public License, version 2, or later.
+#
+# Copyright 2016 R. A. Reitmeyer
 
 
 # Documentation note: parens are treated as LITERAL parens,
@@ -28,7 +27,7 @@ if not os.path.exists("logs"):
 
 logging.basicConfig(
     filename=os.path.join('logs',__file__+time.strftime('.%Y%m%d_%H%M%S.log', time.localtime(NOW))),
-    format='%(asctime)|%(levelno)|%(levelname)|%(filename)|%(lineno)|%(message)',
+    format='(asctime)|(levelno)|(levelname)|(filename)|(lineno)|(message)',
     level=logging.DEBUG
     )
 

@@ -1,0 +1,14 @@
+Copyright 2016, R. A. Reitmeyer
+
+This project consists of two parts:
+
+* Data, tracking how the names and identifiers of US Census columns
+  have evolved over the years.
+
+* Code, a set of tools to make it easier to find those Census names
+  and identifiers
+
+The Data is licensed under the Creative Commons Attribution Share
+Alike license (CC BY-SA 2.5).
+
+The Code is licensed under Apache 2 license.

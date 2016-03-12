@@ -1,3 +1,5 @@
+# Copyright 2016 R. A. Reitmeyer
+
 import os
 import sys
 import csv
